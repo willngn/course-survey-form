@@ -1,0 +1,379 @@
+<div class="container">
+  <header class="header">
+    <h1 id="title" class="text-center">Minerva CS Core Course Survey Form</h1>
+    <p id="description" class="description text-center">
+      Thank you for filling this survey to help courses become better designed
+    </p>
+  </header>
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name">Name (students can stay anonymous)</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        class="form-control"
+        placeholder="Enter your name"
+      />
+    </div>
+    
+    <div class="form-group">
+      <label id="number-label" for="number"
+        >Class<span class="clue" required></span></label
+      >
+      <input
+        type="number"
+        name="class"
+        id="number"
+        min="22"
+        max="25"
+        class="form-control"
+        placeholder="Only active class"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <p>What course are your giving feedback for?</p>
+      <select id="dropdown" name="course" class="form-control" required>
+        <option disabled selected value>Select the course</option>
+        <option value="CS110">CS110 - Algorithm and Data Structures</option>
+        <option value="CS111">CS111 - Single and Multivariable Calculus</option>
+        <option value="CS113">CS113 - Linear Algebra</option>
+        <option value="CS114">Probability, Statistics, and The Structure of Randomness</option>
+        <option value="CS130">Decision Making: Prediction and Causal Inference</option>
+      </select>
+    </div>
+    
+    <div class="form-group">
+      <p>Who is your Professor?</p>
+      <select id="dropdown" name="instructor" class="form-control" required>
+        <option disabled selected value>Select the Professor</option>
+        <option value="ribeiro">Professor R. Ribeiro</option>
+        <option value="richard">Professor B. Richard</option>
+        <option value="tambasco">Professor L. Tambasco</option>
+        <option value="scheffler">Professor C. Scheffler</option>
+        <option value="diamond">Professor A. Diamond</option>
+        <option value="r-levitt">Professor R. Levitt</option>
+        <option value="j-levitt">Professor J. Levitt</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>Out of 5, how much do you feel getting out of the class in terms of content ?</p>
+      <label>
+        <input
+          name="content-rating"
+          value="5"
+          type="radio"
+          class="input-radio"
+          checked
+        />5</label
+      >
+      <label>
+        <input
+          name="content-rating"
+          value="4"
+          type="radio"
+          class="input-radio"
+        />4</label
+      >
+
+      <label
+        ><input
+          name="content-rating"
+          value="3"
+          type="radio"
+          class="input-radio"
+        />3</label
+      >
+      
+      <label
+        ><input
+          name="content-rating"
+          value="2"
+          type="radio"
+          class="input-radio"
+        />2</label
+      >
+      
+      <label
+        ><input
+          name="content-rating"
+          value="1"
+          type="radio"
+          class="input-radio"
+        />1</label
+      >
+      
+    </div>
+    
+    <div class="form-group">
+      <p>Any specific comments? Please elaborate here.</p>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Enter your comment here..."
+      ></textarea>
+    </div>
+    
+    <div class="form-group">
+      <p>Out of 5, how much do you feel engaged in class discussion ?</p>
+      <label>
+        <input
+          name="class-environment"
+          value="5"
+          type="radio"
+          class="input-radio"
+          checked
+        />5</label
+      >
+      <label>
+        <input
+          name="class-environment"
+          value="4"
+          type="radio"
+          class="input-radio"
+        />4</label
+      >
+
+      <label
+        ><input
+          name="class-environment"
+          value="3"
+          type="radio"
+          class="input-radio"
+        />3</label
+      >
+      
+      <label
+        ><input
+          name="class-environment"
+          value="2"
+          type="radio"
+          class="input-radio"
+        />2</label
+      >
+      
+      <label
+        ><input
+          name="class-environment"
+          value="1"
+          type="radio"
+          class="input-radio"
+        />1</label
+      >
+      
+    </div>
+    
+    <div class="form-group">
+      <p>Any specific comments? Please elaborate here.</p>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Enter your comment here..."
+      ></textarea>
+    </div>
+    
+    <div class="form-group">
+      <p>Out of 5, how much do you feel well guided by the instructor ?</p>
+      <label>
+        <input
+          name="professor"
+          value="5"
+          type="radio"
+          class="input-radio"
+          checked
+        />5</label
+      >
+      <label>
+        <input
+          name="professor"
+          value="4"
+          type="radio"
+          class="input-radio"
+        />4</label
+      >
+
+      <label
+        ><input
+          name="professor"
+          value="3"
+          type="radio"
+          class="input-radio"
+        />3</label
+      >
+      
+      <label
+        ><input
+          name="professor"
+          value="2"
+          type="radio"
+          class="input-radio"
+        />2</label
+      >
+      
+      <label
+        ><input
+          name="professor"
+          value="1"
+          type="radio"
+          class="input-radio"
+        />1</label
+      >
+      
+    </div>
+    
+    <div class="form-group">
+      <p>Any specific comments? Please elaborate here.</p>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Enter your comment here..."
+      ></textarea>
+    </div>
+
+    <div class="form-group">
+      <p>
+        What is your favorite aspect of the course?
+      </p>
+      <select id="most-like" name="mostLike" class="form-control" required>
+        <option disabled selected value>Select an option</option>
+        <option value="Class-Content">Class Content</option>
+        <option value="resources">Class Resources</option>
+        <option value="professor">Professor</option>
+        <option value="classmate">Classmate</option>
+        <option value="classmate">Others. Please specify below</option>
+      </select>
+      
+    </div>
+    
+    <div class="form-group">
+      
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Enter your comment here..."
+      ></textarea>
+    </div>
+
+    <div class="form-group">
+      <p>
+        As the form serves as information carrier for CS Department at Minerva, we would like to know students' career interests and orientation
+        <span class="clue">(Check all that apply)</span>
+      </p>
+
+      <label
+        ><input
+          name="prefer"
+          value="Data-Science"
+          type="checkbox"
+          class="input-checkbox"
+        />Data Science</label
+      >
+      <label>
+        <input
+          name="prefer"
+          value="statistics"
+          type="checkbox"
+          class="input-checkbox"
+        />Statistics</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="computer-vision"
+          type="checkbox"
+          class="input-checkbox"
+        />Computer Vision</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="machine-learning"
+          type="checkbox"
+          class="input-checkbox"
+        />Machine Learning</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="artificial-intelligence"
+          type="checkbox"
+          class="input-checkbox"
+        />Artificial Intelligence</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="maths"
+          type="checkbox"
+          class="input-checkbox"
+        />Mathematics</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="bioinformatics"
+          type="checkbox"
+          class="input-checkbox"
+        />Bioinformatics</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="software-engineering"
+          type="checkbox"
+          class="input-checkbox"
+        />Software Engineering</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="data-engineering"
+          type="checkbox"
+          class="input-checkbox"
+        />Data Engineering</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="others"
+          type="checkbox"
+          class="input-checkbox"
+        />Others. Please specify below.</label
+      >
+      
+    </div>
+    
+    <div class="form-group">
+      
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Enter your comment here..."
+      ></textarea>
+    </div>
+
+    <div class="form-group">
+      <p>Anything else to share with us?</p>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Enter your comment here..."
+      ></textarea>
+    </div>
+
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+    </div>
+  </form>
+</div>
+
